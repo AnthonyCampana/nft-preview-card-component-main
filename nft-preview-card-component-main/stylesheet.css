@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    border: 100cm, solid, hotpink;
+    align-items:  center;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid #73AD21;
+    background-color: hsl(216, 50%, 16%);
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 30px;
+    /* need to fix height and width */
+    height: 60%;
+    width: 60%;
+}
+
+.card-image {
+    justify-content: center;
+    align-items: center;
+}
+
+.NFT-image {
+    border-radius: 25px;
+    height: 40%;
+    width: 100%;
+}
+
+.card-name {
+    color: hsl(0, 0%, 100%);
+}
+
+.card-description {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card-value {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.card-cost{
+    display: inline;
+    border: 2px solid orange;
+    color: hsl(178, 100%, 50%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card-time-left {
+    border: 4px solid yellow;
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);;
+}
+
+p.card-cost {
+    display: inline;
+    margin-top: 0px;
+    margin-bottom: 0px;;
+    padding: 0cm;
+    border: 2px solid hotpink;
+}
+
+
+
+

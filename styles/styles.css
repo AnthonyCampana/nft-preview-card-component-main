@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        width: auto;
+        height: 100vh;
+    }
+
+    main {
+        width: auto;
+        height: 98%;
+        background-color: hsl(217, 54%, 11%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 15px;
+        width: 23%;
+        height: 69%;
+        padding: 1.5% 1.5% 1.5% 1.5%;
+    }
+
+    .image {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+    }
+
+    .original-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .original-image > img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px
+    }
+
+    .hover-image {
+        display: none;
+    }
+
+    .hover-image > img {
+        width: 23%;
+        height: 23%;
+        opacity: 1;
+    }
+
+    .image:hover .hover-image {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: hsl(178, 100%, 50%);
+        background-image: url('../images/icon-view.svg') no-repeat;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        opacity: .6;
+        cursor: pointer;
+    }
+
+    .image:hover .original-image {
+        opacity: .5;
+    }
+
+    .container > h2 {
+        font-family: 'Outfit', sans-serif;
+        color: hsl(0, 0%, 100%);
+        margin: 8% 0% 8% 0%;
+        font-weight: 600;
+    }
+
+    .container > h2:hover {
+        color: hsl(178, 100%, 50%);
+    }
+
+    .container > p {
+        color: hsl(215, 51%, 70%);
+        font-family: 'Outfit', sans-serif;
+        font-size: 18px;
+        margin-bottom: 7%;
+        line-height: 28px;
+        font-weight: 300;
+    }
+
+    .auction-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+    }
+
+    .current-price {
+        width: 40%;
+    }
+
+    .current-price > img {
+        height: 80%;
+    }
+
+    .current-price > p {
+        display: inline;
+        font-size: 18px;
+        font-family: 'Outfit', sans-serif;
+        color: hsl(178, 100%, 50%);
+        margin-bottom: 5%;
+        font-weight: 400;
+    }
+
+    .time-remaining {
+        width: 32%;
+        float: right;
+    }
+
+    .time-remaining > img {
+        height: 80%;
+    }
+
+    .time-remaining > p {
+        display: inline;
+        font-size: 18px;
+        font-family: 'Outfit', sans-serif;
+        color: hsl(215, 51%, 70%);
+        margin-bottom: 5%;
+        font-weight: 300;
+    }
+
+    hr {
+        background-color: hsl(215, 32%, 27%);
+    }
+
+    .author-info {
+        display: flex;
+        margin-top: 26px;
+    }
+
+    .author-info > img {
+        width: 32px;
+        height: 32px;
+        border: 2px solid hsl(0, 0%, 100%);
+        border-radius: 50px;
+    }
+
+    .author-info > p {
+        font-family: 'Outfit', sans-serif;
+        color: hsl(215, 51%, 70%);
+        font-size: 18px;
+        text-align: center;
+        margin-left: 10px;
+        height: auto;
+        padding-top: 1.8%;
+        font-weight: 300;
+    }
+
+    span {
+        color: hsl(0, 0%, 100%);
+        font-weight: 300;
+    }
+
+    span:hover {
+        color: hsl(178, 100%, 50%);
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    main {
+        width: auto;
+        height: 98%;
+        background-color: hsl(217, 54%, 11%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 15px;
+        width: 75%;
+        height: 80%;
+        padding: 6% 6% 6% 6%;
+    }
+
+    .image {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+    }
+
+    .original-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .original-image > img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px
+    }
+
+    .hover-image {
+        display: none;
+    }
+
+    .hover-image > img {
+        width: 23%;
+        height: 23%;
+        opacity: 1;
+    }
+
+    .image:hover .hover-image {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: hsl(178, 100%, 50%);
+        background-image: url('../images/icon-view.svg') no-repeat;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        opacity: .6;
+        cursor: pointer;
+    }
+
+    .image:hover .original-image {
+        opacity: .5;
+    }
+
+    .container > h2 {
+        font-family: 'Outfit', sans-serif;
+        color: hsl(0, 0%, 100%);
+        margin: 7% 0% 7% 0%;
+        font-weight: 600;
+    }
+
+    .container > h2:hover {
+        color: hsl(178, 100%, 50%);
+    }
+
+    .container > p {
+        color: hsl(215, 51%, 70%);
+        font-family: 'Outfit', sans-serif;
+        font-size: 17px;
+        margin-bottom: 7%;
+        line-height: 28px;
+        font-weight: 300;
+    }
+
+    .auction-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+    }
+
+    .current-price {
+        width: 40%;
+    }
+
+    .current-price > img {
+        height: 80%;
+    }
+
+    .current-price > p {
+        display: inline;
+        font-size: 18px;
+        font-family: 'Outfit', sans-serif;
+        color: hsl(178, 100%, 50%);
+        margin-bottom: 5%;
+        font-weight: 400;
+    }
+
+    .time-remaining {
+        width: 40%;
+    }
+
+    .time-remaining > img {
+        height: 80%;
+    }
+
+    .time-remaining > p {
+        display: inline;
+        font-size: 18px;
+        font-family: 'Outfit', sans-serif;
+        color: hsl(215, 51%, 70%);
+        margin-bottom: 5%;
+        font-weight: 300;
+    }
+
+    hr {
+        background-color: hsl(215, 32%, 27%);
+    }
+
+    .author-info {
+        display: flex;
+        margin-top: 26px;
+    }
+
+    .author-info > img {
+        width: 29px;
+        height: 29px;
+        border: 1px solid hsl(0, 0%, 100%);
+        border-radius: 50px;
+    }
+
+    .author-info > p {
+        font-family: 'Outfit', sans-serif;
+        color: hsl(215, 51%, 70%);
+        font-size: 16px;
+        text-align: center;
+        margin-left: 10px;
+        height: auto;
+        padding-top: 1.8%;
+        font-weight: 300;
+    }
+
+    span {
+        color: hsl(0, 0%, 100%);
+        font-family: 'Outfit', sans-serif;
+        font-weight: 300;
+    }
+
+    span:hover {
+        color: hsl(178, 100%, 50%);
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
